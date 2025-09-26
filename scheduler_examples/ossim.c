@@ -19,7 +19,7 @@
 
 static uint32_t PID = 0;
 
-
+//Programa principal que arranca a simulação, é aqui que o FIFO é chamado
 
 /**
  * @brief Set up the server socket for the scheduler.

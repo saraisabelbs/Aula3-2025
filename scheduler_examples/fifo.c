@@ -19,6 +19,8 @@
  * @param cpu_task Double pointer to the currently running task. This will be updated
  *                 to point to the next task to run.
  */
+
+//algortimo First In First Out, ou seja os processos sao executados pela ordem de chegada sem interrupções até terminar.
 void fifo_scheduler(uint32_t current_time_ms, queue_t *rq, pcb_t **cpu_task) {
     if (*cpu_task) {
         (*cpu_task)->ellapsed_time_ms += TICKS_MS;      // Add to the running time of the application/task
